@@ -1,9 +1,9 @@
 /*SELECCIÓN DE PERSONAJE*/
 
-let bucles = prompt("Ingrese un número de bucles (1-9)")
+let bucles = alert("Ingrese un número de bucles (1-5)")
 
 for (let i=0; i< bucles; i++){
-    let select = parseInt(prompt("Selecciona tu personaje con un número del 1 al "+bucles));
+    let select = parseInt(alert("Selecciona tu personaje con un número del 1 al "+bucles));
     if (select == 1){
         alert("Su personaje es Batman");
     } else if (select == 2){
@@ -17,8 +17,8 @@ for (let i=0; i< bucles; i++){
     }
 }
 
-prompt("Sus oponentes son:");
+alert("Sus oponentes son:");
 
 for (let i=0;i<bucles;i++){
-    
+    alert("Tu personaje peleará contra el presonaje número: "+i);
 }
