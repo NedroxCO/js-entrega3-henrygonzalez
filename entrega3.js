@@ -1,9 +1,10 @@
 /*SELECCIÓN DE PERSONAJE*/
 
-let bucles = alert("Ingrese un número de bucles (1-5)")
+let bucles = prompt("Ingrese un número de bucles (1-5)")
+let select;
 
 for (let i=0; i< bucles; i++){
-    let select = parseInt(alert("Selecciona tu personaje con un número del 1 al "+bucles));
+    select = parseInt(prompt("Selecciona tu personaje con un número del 1 al "+bucles));
     if (select == 1){
         alert("Su personaje es Batman");
     } else if (select == 2){
@@ -19,6 +20,16 @@ for (let i=0; i< bucles; i++){
 
 alert("Sus oponentes son:");
 
-for (let i=0;i<bucles;i++){
-    alert("Tu personaje peleará contra el presonaje número: "+i);
+for (let i=0; i<bucles;i++){
+    if (i == 0){
+        alert("Batman peleará contra el Joker");
+    } else if (i == 1){
+        alert("Bob Esponja peleará contra Plancton");
+    } else if (i == 2){
+        alert("Deadpool peleará contra Wolverine");
+    } else if (i == 3){
+        alert("Link peleará contra Ganon");
+    } else{
+        alert("Pac-Man peleará contra Ghost");
+    }
 }
